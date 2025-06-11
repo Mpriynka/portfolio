@@ -6,11 +6,64 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Priyanka More | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.tech-stack {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 15px 0;
+			}
+			.tech-item {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				background: rgba(255, 255, 255, 0.1);
+				padding: 5px 10px;
+				border-radius: 4px;
+				font-size: 0.8em;
+			}
+			.project-links {
+				margin: 15px 0;
+			}
+			.project-links a {
+				margin-right: 15px;
+				color: #fff;
+				text-decoration: none;
+			}
+			.project-links a:hover {
+				color: #4caf50;
+			}
+			.project-section {
+				margin-bottom: 40px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			}
+			.project-section:last-child {
+				border-bottom: none;
+			}
+			.achievement-item {
+				margin-bottom: 20px;
+			}
+			.skill-category {
+				margin-bottom: 25px;
+			}
+			.skill-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+			.skill-item {
+				background: rgba(255, 255, 255, 0.1);
+				padding: 8px 15px;
+				border-radius: 4px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,23 +73,22 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="icon solid fa-code"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
 								<h1>Priyanka More</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<p>Computer Science Engineer | Full Stack Developer | AI Enthusiast</p>
+								<p>B.Tech at IIIT Pune | CGPA: 7.96</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Projects</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="#skills">Skills</a></li>
-								<li><a href="#about">Achivements</a></li>
+								<li><a href="#achievements">Achievements</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -46,33 +98,207 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<h2 class="major">About Me</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="Profile Picture" /></span>
+								<p>Hello! I'm Priyanka More, a Computer Science Engineering student at the Indian Institute of Information Technology, Pune. I'm passionate about software development, artificial intelligence, and creating innovative solutions to real-world problems.</p>
+								<p>My coursework includes Data Structures and Algorithms, Database Management Systems, Object-Oriented Programming, Operating Systems, Computer Networks, and Compiler Design. I'm constantly expanding my knowledge through projects and self-learning.</p>
+								<p>When I'm not coding, you can find me participating in hackathons, exploring diffrent tech stacks, or mentoring fellow students. I believe in the power of technology to create positive change and I'm excited to be part of that transformation.</p>
 							</article>
 
 						<!-- Projects -->
 							<article id="projects">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h1 class="major">Projects</h1>
+								
+								<!-- EasyAudit -->
+								<div class="project-section">
+									<h2>EasyAudit</h2>
+									<p>CIS compliance auditing tool for Windows and Linux</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fab fa-python"></i> <a href="https://docs.python.org/" target="_blank">Python</a></span>
+										<span class="tech-item"><i class="fas fa-database"></i> <a href="https://www.sqlite.org/docs.html" target="_blank">SQLite</a></span>
+										<span class="tech-item"><i class="fab fa-linux"></i> Bash</span>
+										<span class="tech-item"><i class="fab fa-ubuntu"></i> Ubuntu</span>
+									</div>
+									<ul>
+										<li>Contributed to backend development for EasyAudit, a CIS compliance auditing tool, focusing on robust script selection, execution, and result display.</li>
+										<li>Contributed to writing audit scripts for Ubuntu 22.04 in Bash.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://github.com/h4636oh/EasyAudit_QT" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+									</div>
+								</div>
+								
+								<!-- PhoenixMaze -->
+								<div class="project-section">
+									<h2>PhoenixMaze</h2>
+									<p>A Dynamic-Maze Web Game</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fas fa-gamepad"></i> <a href="https://elixir-lang.org/docs.html" target="_blank">Elixir</a></span>
+										<span class="tech-item"><i class="fas fa-fire"></i> <a href="https://hexdocs.pm/phoenix" target="_blank">Phoenix</a></span>
+										<span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
+										<span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
+										<span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+									</div>
+									<ul>
+										<li>Developed an interactive 2D maze game with dynamic maze regeneration using the Phoenix web framework.</li>
+										<li>Implemented the Origin Shift maze generation algorithm in Elixir, to dynamically restructure game paths.</li>
+										<li>Used LiveView to create a reactive gaming experience with real-time state updates and event handling.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://gitlab.com/tbd1112801/phoenixmaze" target="_blank"><i class="fab fa-github"></i> View on GitLab</a>
+									</div>
+								</div>
+								
+								<!-- Game Theory in Checkers -->
+								<div class="project-section">
+									<h2>Game Theory in Checkers</h2>
+									<p>Minimax vs. Reinforcement Learning</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fab fa-python"></i> <a href="https://docs.python.org/" target="_blank">Python</a></span>
+										<span class="tech-item"><i class="fas fa-robot"></i> <a href="https://numpy.org/doc/" target="_blank">NumPy</a></span>
+										<span class="tech-item"><i class="fas fa-project-diagram"></i> AI Algorithms</span>
+									</div>
+									<ul>
+										<li>Implemented and analyzed Minimax algorithm and Reinforcement Learning-based bots for the Checkers game.</li>
+										<li>Developed both game and bot logic, making a significant contribution to the project's technical foundation.</li>
+										<li>Achieved perfect play with Q Learning against Minimax algorithm of specific depths by exploiting their fixed decision-making process.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://gitlab.com/algorific1/project" target="_blank"><i class="fab fa-github"></i> View on GitLab</a>
+									</div>
+								</div>
+								
+								<!-- Lox Interpreter -->
+								<div class="project-section">
+									<h2>Lox Interpreter</h2>
+									<p>Programming Language Implementation</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fab fa-python"></i> <a href="https://docs.python.org/" target="_blank">Python</a></span>
+										<span class="tech-item"><i class="fas fa-code"></i> Regex</span>
+										<span class="tech-item"><i class="fas fa-terminal"></i> Shell Scripting</span>
+										<span class="tech-item"><i class="fas fa-cogs"></i> Compiler Theory</span>
+									</div>
+									<ul>
+										<li>Developed a Lox language compiler from scratch with support for tokenization, SLR parsing, expression evaluation, and printing expressions.</li>
+										<li>Built a modular pipeline with separate stages for scanning, parsing, and evaluation.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://gitlab.com/priyanka_spm/lox_compiler" target="_blank"><i class="fab fa-github"></i> View on GitLab</a>
+									</div>
+								</div>
+
+								
+								<!-- Pathshala-Pal -->
+								<div class="project-section">
+									<h2>Pathshala-Pal</h2>
+									<p>AI Assistant for School Teachers</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fab fa-python"></i> <a href="https://docs.python.org/" target="_blank">Python</a></span>
+										<span class="tech-item"><i class="fas fa-bolt"></i> <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a></span>
+										<span class="tech-item"><i class="fas fa-brain"></i> <a href="https://python.langchain.com/docs/get_started/introduction" target="_blank">LangChain</a></span>
+										<span class="tech-item"><i class="fas fa-database"></i> <a href="https://www.mongodb.com/docs/" target="_blank">MongoDB</a></span>
+										<span class="tech-item"><i class="fas fa-robot"></i> RAG Pipeline</span>
+									</div>
+									<ul>
+										<li>Leveraged Ollama 2 alongside a Retrieval-Augmented Generation (RAG) pipeline to craft rich, context-sensitive documents generation, quiz generation and efficient information retrieval from local datasets.</li>
+										<li>Designed backend APIs using FastAPI and used LangChain to orchestrate prompt chains and tool execution.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://github.com/Mpriynka/h2s" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+									</div>
+								</div>
+								
+								
+								<!-- ScalaGit -->
+								<div class="project-section">
+									<h2>ScalaGit</h2>
+									<p>Scala Git Implementation</p>
+									<div class="tech-stack">
+										<span class="tech-item"><i class="fas fa-code-branch"></i> <a href="https://docs.scala-lang.org/" target="_blank">Scala</a></span>
+										<span class="tech-item"><i class="fas fa-tools"></i> <a href="https://www.scala-sbt.org/documentation.html" target="_blank">sbt</a></span>
+										<span class="tech-item"><i class="fab fa-git-alt"></i> Git</span>
+									</div>
+									<ul>
+										<li>Building ScalaGit, a Git version control system clone in Scala, leveraging sbt for build management.</li>
+										<li>Implemented core Git functionalities, including Object storage (blobs, trees, commits) and index management.</li>
+										<li>Currently designing and implementing commit graph traversal and a basic merge algorithm.</li>
+									</ul>
+									<div class="project-links">
+										<a href="https://gitlab.com/trig4/scalagit" target="_blank"><i class="fab fa-github"></i> View on GitLab</a>
+									</div>
+								</div>
 							</article>
 
-						<!-- Achivements -->
-							<article id="achivements">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="Skills" /></span>
+								
+								<div class="skill-category">
+									<h3>Programming Languages</h3>
+									<div class="skill-list">
+										<span class="skill-item"><i class="fab fa-python"></i> <a href="https://docs.python.org/" target="_blank">Python</a></span>
+										<span class="skill-item"><i class="fas fa-c"></i> <a href="https://devdocs.io/c/" target="_blank">C</a></span>
+										<span class="skill-item"><i class="fas fa-c"></i> <a href="https://devdocs.io/cpp/" target="_blank">C++</a></span>
+										<span class="skill-item"><i class="fab fa-html5"></i> HTML</span>
+										<span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
+										<span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+										<span class="skill-item"><i class="fas fa-code-branch"></i> Scala</span>
+										<span class="skill-item"><i class="fas fa-fire"></i> Elixir</span>
+									</div>
+								</div>
+								
+								<div class="skill-category">
+									<h3>Frameworks & Tools</h3>
+									<div class="skill-list">
+										<span class="skill-item"><i class="fas fa-database"></i> <a href="https://dev.mysql.com/doc/" target="_blank">MySQL</a></span>
+										<span class="skill-item"><i class="fas fa-fire"></i> <a href="https://hexdocs.pm/phoenix" target="_blank">Phoenix</a></span>
+										<span class="skill-item"><i class="fab fa-react"></i> <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React</a></span>
+										<span class="skill-item"><i class="fas fa-window-maximize"></i> Qt Designer</span>
+										<span class="skill-item"><i class="fas fa-bolt"></i> <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a></span>
+										<span class="skill-item"><i class="fas fa-brain"></i> <a href="https://python.langchain.com/docs/get_started/introduction" target="_blank">LangChain</a></span>
+										<span class="skill-item"><i class="fab fa-git-alt"></i> <a href="https://git-scm.com/doc" target="_blank">Git</a></span>
+										<span class="skill-item"><i class="fab fa-gitlab"></i> <a href="https://docs.gitlab.com/" target="_blank">GitLab</a></span>
+										<span class="skill-item"><i class="fab fa-github"></i> <a href="https://docs.github.com/en" target="_blank">GitHub</a></span>
+									</div>
+								</div>
+								
+								<div class="skill-category">
+									<h3>Operating Systems</h3>
+									<div class="skill-list">
+										<span class="skill-item"><i class="fab fa-linux"></i> <a href="https://ubuntu.com/tutorials/command-line-for-beginners" target="_blank">Ubuntu</a></span>
+										<span class="skill-item"><i class="fab fa-linux"></i> Linux Mint</span>
+										<span class="skill-item"><i class="fab fa-windows"></i> Windows</span>
+									</div>
+								</div>
 							</article>
 						
-						<!-- Skills -->
-						<article id="skills">
-							<h2 class="major">About</h2>
-							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-							<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-						</article>
+						<!-- Achievements -->
+							<article id="achievements">
+								<h2 class="major">Achievements</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="Achievements" /></span>
+								
+								<div class="achievement-item">
+									<h3>Smart India Hackathon (SIH) 2024 Winner</h3>
+									<p>Project selected under the Cybersecurity domain by the National Technical Research Organisation (NTRO).</p>
+								</div>
+								
+								<div class="achievement-item">
+									<h3>Women Engineers Scholar</h3>
+									<p>Mentorship program by Talentsprint, supported by Google. Selected among top 200 candidates from across India with a 100% scholarship by Google.</p>
+								</div>
+								
+								<div class="achievement-item">
+									<h3>Google Girl Hackathon 2025 - Ideathon Round Qualifier</h3>
+									<p>Designed a Gemini powered vim plugin to enable inline code assistance.</p>
+								</div>
+								
+								<div class="achievement-item">
+									<h3>Class Representative, IIIT Pune</h3>
+									<p><em>Sept 2023 - Present</em></p>
+									<p>Communicating effectively with professors, the director and fellow students to address class concerns.</p>
+								</div>
+							</article>
 
 						<!-- Contact -->
 							<article id="contact">
@@ -98,260 +324,17 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands fa-gitlab"><span class="label">GitLab</span></a></li>
+									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Priyanka More. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
