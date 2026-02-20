@@ -209,6 +209,33 @@
 				<h1 class="major">Projects</h1>
 				<div class="projects-grid">
 
+					<!-- On-Device PII Redaction -->
+					<div class="project-section">
+						<h2>On-Device PII Redaction</h2>
+						<p class="project-tagline">Privacy-Preserving Edge AI</p>
+						<div class="tech-stack">
+							<span class="tech-item"><i class="fas fa-brain"></i> ONNX &amp; PyTorch</span>
+							<span class="tech-item"><i class="fas fa-microchip"></i> WebAssembly</span>
+							<span class="tech-item"><i class="fab fa-react"></i> React/TS</span>
+							<span class="tech-item"><i class="fas fa-cogs"></i> Transformers.js</span>
+						</div>
+						<ul>
+							<li>Engineered a fully privacy-preserving, local-first NLP pipeline to detect and redact PII
+								entirely within the browser.</li>
+							<li>Fine-tuned a DistilBERT model on 300k samples, applied Iterative Magnitude Pruning (LTH)
+								to achieve 85% sparsity, and compressed it from 260MB to 63MB via INT8 ONNX
+								quantization.</li>
+							<li>Built a React/TypeScript UI with reversible redaction, utilizing a custom Web Worker
+								inference engine for non-blocking text analysis.</li>
+						</ul>
+						<div class="project-links">
+							<a href="https://github.com/Mpriynka/PII_Redaction" target="_blank"><i
+									class="fab fa-github"></i> View on GitHub</a>
+							<a href="https://mpriynka.github.io/PII_Redaction/" target="_blank"><i
+									class="fas fa-external-link-alt"></i> Live</a>
+						</div>
+					</div>
+
 					<!-- GearGuard -->
 					<div class="project-section">
 						<h2>GearGuard</h2>
@@ -256,6 +283,8 @@
 						<div class="project-links">
 							<a href="https://github.com/Mpriynka/LTH-on-FSL" target="_blank"><i
 									class="fab fa-github"></i> View on GitHub</a>
+							<a href="https://mpriynka.github.io/docs-lth-on-fsl/" target="_blank"><i
+									class="fas fa-book"></i> Docs</a>
 						</div>
 					</div>
 
@@ -371,28 +400,6 @@
 									class="fab fa-github"></i> View on GitHub</a>
 						</div>
 					</div>
-
-					<!-- Pathshala-Pal -->
-					<div class="project-section">
-						<h2>Pathshala-Pal</h2>
-						<p class="project-tagline">AI Assistant for School Teachers</p>
-						<div class="tech-stack">
-							<span class="tech-item"><i class="fab fa-python"></i> Python</span>
-							<span class="tech-item"><i class="fas fa-bolt"></i> FastAPI</span>
-							<span class="tech-item"><i class="fas fa-brain"></i> LangChain</span>
-							<span class="tech-item"><i class="fas fa-robot"></i> RAG Pipeline</span>
-						</div>
-						<ul>
-							<li>Leveraged Ollama 2 with a RAG pipeline for context-sensitive document and quiz
-								generation from local datasets.</li>
-							<li>FastAPI backend with LangChain orchestrating prompt chains and tool execution.</li>
-						</ul>
-						<div class="project-links">
-							<a href="https://github.com/Mpriynka/h2s" target="_blank"><i class="fab fa-github"></i> View
-								on GitHub</a>
-						</div>
-					</div>
-
 
 
 				</div>
